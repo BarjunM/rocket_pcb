@@ -1,14 +1,14 @@
 # Elytra: TVC Hobby Rocket Flight Computer
 
-## 🚀 Short Description
+## Short Description
 
 Elytra is a half-kilogram solid-fuel TVC hobby rocket flight computer. To develop a custom computer, the goal is to start as simple as possible and iterate through more and more detailed developments. The current version thus far incorporates working components including an ESP32, BMP280, and MPU6050 dev board and joins them all onto 1 single pcb.
 
-## 🎯 Why Make This Project?
+## Why Make This Project?
 
 The purpose of Elytra is to eventually explore self-landing rocket technology. In order to develop an autonomous rocket, the computer needs to be able to read input data regarding yaw, pitch, roll, acceleration, and elevation in order to actively adjust the direction of thrust and self-correct direction. Hence, the purpose of the flight computer is to actively control a thrust vectoring system via servos (TVC) based on input data from various telemetry sensors, including an accelerometer (mpu6050) and barometer (bmp280)
 
-## 🖼️ Project Images
+## Project Images
 
 ![cad_image](/assets/cad1.png)
 ![cad_image](/assets/cad2.png)
