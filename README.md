@@ -20,18 +20,16 @@ The purpose of Elytra is to eventually explore self-landing rocket technology. I
 
 ## BOM
 
-| No. | Qty | Component / Comment               | Supplier Part | Supplier     | Unit Cost | Total Cost (+shipping)   | Link |
-|-----|-----|-----------------------------------|---------------|--------------|------------------|-------------------|https://jlcpcb.com/partdetail/HCTL-RS606101N011CRB/C2885788|
-| 1   | 5   | RS606-10N011CG1B-3A               | C2885789      | LCSC         | $0.67*    | $3.35*            | -    |
-| 2   | 1   | MPU5060 Breakout (Accelerometer)  | -             | AliExpress   | -         | Already Owned     | -    |
-| 3   | 1   | BMP280 Breakout (Barometer)       | -             | AliExpress   | -         | Already Owned     | -    |
-| 4   | 1   | ESP32 WROOM (Microcontroller)     | -             | AliExpress   | -         | Already Owned     | -    |
-| 5   | 1   | Micro SD Card Reader (Data Storage) | -           | AliExpress   | -         | Already Owned     | -    |
-| 6   | 1   | Servos (Motor)                    | -             | AliExpress   | -         | Already Owned     | -    |
-| 7   | 1   | 3S LiPo (Battery)                 | -             | AliExpress   | -         | Already Owned     | -    |
-| 8   | 5   | 3S XT30 to 5V 5A (Buck Converter) | -             | SpeedyFPV    | -         | Already Owned     | -    |
-| 9   | 5   | Custom PCB                        | -             | JLCPCB       | $2.92     | $14.60 + 27.72    | -    |
+| No. | Qty | Component / Comment                  | Supplier Part | Supplier   | Unit Cost | Total Cost (+shipping) | Link |
+|-----|-----|--------------------------------------|----------------|------------|-----------|-------------------------|------|
+| 1   | 5   | RS606-10N011CG1B-3A                  | C2885789       | LCSC       | $0.67*    | $3.35*                  | [JLCPCB](https://jlcpcb.com/partdetail/HCTL-RS606101N011CRB/C2885788) |
+| 2   | 1   | MPU6050 Breakout (Accelerometer)     | -              | AliExpress | -         | Already Owned           | -    |
+| 3   | 1   | BMP280 Breakout (Barometer)          | -              | AliExpress | -         | Already Owned           | -    |
+| 4   | 1   | ESP32 WROOM (Microcontroller)        | -              | AliExpress | -         | Already Owned           | -    |
+| 5   | 1   | Micro SD Card Reader (Data Storage)  | -              | AliExpress | -         | Already Owned           | -    |
+| 6   | 1   | Servos (Motor)                       | -              | AliExpress | -         | Already Owned           | -    |
+| 7   | 1   | 3S LiPo (Battery)                    | -              | AliExpress | -         | Already Owned           | -    |
+| 8   | 5   | 3S XT30 to 5V 5A (Buck Converter)    | -              | SpeedyFPV  | -         | Already Owned           | -    |
+| 9   | 5   | Custom PCB                           | -              | JLCPCB     | $2.92     | $14.60 + $27.72 shipping| -    |
 
 **Total Cost: $45.67** (excluding already owned components)
-
-> \* Approximate or discounted pricing
