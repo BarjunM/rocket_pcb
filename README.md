@@ -14,7 +14,7 @@ The purpose of Elytra is to eventually explore self-landing rocket technology. I
 ![cad_image](/assets/livecomputer.png)
 ![image](/assets/3dpcb.png)
 ![image](/assets/wiredpcb.png)
-![image](/assets/cad1.png)
+![image](/assets/cad4.png)
 
 
 
