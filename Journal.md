@@ -1,5 +1,3 @@
-<img width="1321" height="66" alt="image" src="https://github.com/user-attachments/assets/7f0f11af-4518-42a0-9d62-d79f872627d1" /># Rocket Journal
-
 ---
 title: "Elytra"
 author: "Arjun Gupta (On Slack: Arjun H)"
