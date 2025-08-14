@@ -68,7 +68,7 @@ Got the shipping notice for the boards today. Double‑checked the footprints li
 
 Unboxed everything and went straight into assembly. Started with the lowest‑profile components / headers, then sensor breakout boards (mpu6050, bmp280, SD module, ESP32 headers). Lots of careful flux + drag soldering so I wouldn't lift pads on the custom footprints. After each section I buzzed out traces: 3V3, 5V, GND rails, I2C lines, SPI lines to the SD, and servo signal pins. No shorts (yay), only had to reflow one stubborn SDA joint.
 
-Brought up the power system: verified buck output at 5.02 V under a light dummy load and checked that the ESP32 3V3 regulator stayed within spec. All sensors enumerated on the bus first try. Servos twitched happily with a quick test pulse script.
+Brought up the power system: verified buck output at 5.02 V under a light dummy load and checked that the ESP32 3V3 regulator stayed within spec. All sensors enumerated on the bus first try. Servos started up with a quick test.
 
 ![image](/assets/soldering1.jpg)
 ![image](/assets/soldering2.jpg)
