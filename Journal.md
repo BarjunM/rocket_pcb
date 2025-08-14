@@ -5,7 +5,7 @@ description: "Elytra is a half-kilogram solid-fuel TVC hobby rocket flight compu
 created_at: "2025-07-25"
 ---
 
-**Daily Journal, Total time 11 hours**
+**Daily Journal, Total time 17 hours**
 
 ## July 18 (4 hours): Research begins!
 
@@ -60,3 +60,30 @@ so they wouldn’t be a huge pain to solder to.
 
 ![image](/assets/wiredpcb.png)
 ![image](/assets/3dpcb.png)
+
+## August 7: PCBs
+Got the shipping notice for the boards today. Double‑checked the footprints list & soldering order so I wouldn't waste time once the package landed. Gathered flux, tips, wick, headers, and queued up the continuity checklist. (No real time counted, just logistics.)
+
+## August 8 (2.5 hours): Solder marathon & power bring‑up
+
+Unboxed everything and went straight into assembly. Started with the lowest‑profile components / headers, then sensor breakout boards (mpu6050, bmp280, SD module, ESP32 headers). Lots of careful flux + drag soldering so I wouldn't lift pads on the custom footprints. After each section I buzzed out traces: 3V3, 5V, GND rails, I2C lines, SPI lines to the SD, and servo signal pins. No shorts (yay), only had to reflow one stubborn SDA joint.
+
+Brought up the power system: verified buck output at 5.02 V under a light dummy load and checked that the ESP32 3V3 regulator stayed within spec. All sensors enumerated on the bus first try. Servos twitched happily with a quick test pulse script.
+
+![image](/assets/soldering1.jpg)
+![image](/assets/soldering2.jpg)
+![image](/assets/finished_pcb.jpg)
+
+## August 9–10 (3.5 hours): Sensor validation, PID + TVC sim tuning
+
+Spent time writing bring‑up / test sketches: read mpu6050 accel + gyro, fused with a quick complementary filter; grabbed bmp280 pressure -> altitude deltas; confirmed SD init + logged a short sensor stream. Added error handling to catch any I2C hiccups (none so far). 
+
+[TVC + PID demo video](/assets/FC.MOV)  
+
+Then moved into PID + thrust vector control simulation, fed in some synthetic disturbance profiles and iterated gains until response settled without overshoot while keeping rise time snappy. Also mapped servo pulse limits to physical gimbal angles so the controller output clamps cleanly.
+
+![data](/assets/example_data.png)
+
+Ran a few full-loop software runs (sensor -> filter -> PID -> actuator mapping) and everything behaved; timing headroom on the ESP32 looks fine.
+
+Video demo of all above stuff working [demo video](/assets/Elytra_Basic.mp4)
