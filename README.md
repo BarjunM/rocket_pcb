@@ -18,6 +18,13 @@ video demo: https://youtu.be/cWIUwfU-qWE
 ![image](/assets/wiredpcb.png)
 ![image](/assets/cad4.png)
 
+### Assembly & Test
+
+![image](/assets/soldering1.jpg)
+![image](/assets/soldering2.jpg)
+![image](/assets/finished_pcb.jpg)
+![data](/assets/example_data.png)
+
 
 
 ## BOM

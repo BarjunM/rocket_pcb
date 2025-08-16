@@ -86,6 +86,7 @@ Then moved into PID + thrust vector control simulation, fed in some synthetic di
 
 Ran a few full-loop software runs (sensor -> filter -> PID -> actuator mapping) and everything behaved; timing headroom on the ESP32 looks fine.
 
-Video demo of all above stuff working [demo video](/assets/Elytra_Basic.mp4)
+Local demo video file: [Elytra basic demo](/assets/Elytra_Basic.mp4)
 
-Link for above if you dont wanna download: https://youtu.be/cWIUwfU-qWE
+YouTube demo: https://youtu.be/cWIUwfU-qWE
+Reddit post: https://www.reddit.com/r/ArjunsWorld/comments/1mqmt3m/first_pcb_elytra/
